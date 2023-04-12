@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+
+    <bean id="User" class="com.zn.spring.bean.User">
+        <property name="name" value="张三"/>
+        <property name="age" value="20"/>
+    </bean>
+
+    <bean id="UserDao" class="com.zn.spring.bean.UserDao"/>
+
+    <bean id="UserService" class="com.zn.spring.bean.UserService">
+        <property name="userDao" ref="UserDao"/>
+    </bean>
+</beans>
